@@ -187,7 +187,10 @@ const handleSubmit = async (e) => {
         className='p-3 border-grey-300 rounded-lg' onChange={handleChange} value={formData.regularPrice} />
               <div className='flex flex-col items-center'>
        <p>Regular Price</p>
-       <span className='text-xs'>($ / month)</span>
+       {formData.type === 'rent' && (
+        <span className='text-xs'>($ / month)</span>
+       )}
+
        </div>
         </div>
         {formData.offer && (
@@ -196,13 +199,14 @@ const handleSubmit = async (e) => {
         className='p-3 border-grey-300 rounded-lg' onChange={handleChange} value={formData.discountPrice}/>
        <div className='flex flex-col items-center'>
        <p>Discounted Price</p>
-       <span className='text-xs'>($ / month)</span>
-       </div>
-        </div>
-        )}
+       {formData.type === 'rent' && (
+        <span className='text-xs'>($ / month)</span>
+       )}
       </div>
      </div>
-     
+        )}
+        </div>
+        </div>
     <div className='flex flex-col flex-1 gap-4'>
     <p className='font-semibold'>Images:
     <span className='font-normal text-gray-600 ml-2'>The first image  will be the cover (max 6)</span>
