@@ -8,7 +8,7 @@ export default function ListingItem({ listing }) {
         <img
           src={
             listing.imageUrls[0] ||
-            'https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/Sales_Blog/real-estate-business-compressor.jpg?width=595&height=400&name=real-estate-business-compressor.jpg'
+            'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rocketmortgage.com%2Flearn%2Freal-property&psig=AOvVaw1X_DauFZim1Lk1FQVz-Ol1&ust=1703961211945000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCV-qmktYMDFQAAAAAdAAAAABAD'
           }
           alt='listing cover'
           className='h-[320px] sm:h-[220px] w-full object-cover hover:scale-105 transition-scale duration-300'
