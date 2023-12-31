@@ -52,12 +52,16 @@ export default function Home() {
       <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
         Find your next <span className='text-slate-400'>perfect</span>
         <br/>
-        place with ease at <span className='text-slate-500'>Kamal Estate</span>
+        place with ease at <span className='text-slate-500'>
+        <span className='text-slate-500'>Kamal</span>
+            <span className='text-slate-700'>Estate</span>
+        </span>
       </h1>
       <div className="text-gray-400 text-xs sm:text-sm">
-      Kamal Estate is the best place to find your next perfect place to live.
-      <br/>
-      We have a wide range of properties for you to choose from.
+      <p>Kamal Estate stands out as the ultimate destination for discovering your ideal living space.</p>
+  <p>Explore a diverse range of properties, including homes, offices, and flats, that cater exclusively to your unique preferences and needs.</p>
+  <p>Whether you're seeking a cozy home, a professional office space, or a stylish flat, Kamal Estate offers an extensive collection tailored just for you.</p>
+  <p>Choose Kamal Estate for the finest selection of residences, making it your foremost choice for finding the perfect place to call home, work, or both.</p>
       </div>
       <Link to={"/search"} className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'>
       Let's get started...
